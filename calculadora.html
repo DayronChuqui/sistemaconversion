@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Bases Numéricas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Convertidor de bases numéricas</h1>
+        <div class="description">
+            Este <strong>convertidor de bases numéricas</strong> puede convertir entre decimal, binario y hexadecimal a cualquier otra base. Escribe el número, selecciona la base y la conversión se hará automáticamente.
+        </div>
+        <input type="text" id="input-number" placeholder="El número que deseas convertir">
+        <div class="convert-from">
+            <label>Convertir desde...</label>
+            <label><input type="radio" name="base" value="binario"> Binario</label>
+            <label><input type="radio" name="base" value="decimal" checked> Decimal</label>
+            <label><input type="radio" name="base" value="hexadecimal"> Hexadecimal</label>
+        </div>
+        <div class="results">
+            <div class="result" id="binary-result">BINARIO: <span id="binary-output"></span></div>
+            <div class="result" id="decimal-result">DECIMAL: <span id="decimal-output"></span></div>
+            <div class="result" id="hexadecimal-result">HEXADECIMAL: <span id="hexadecimal-output"></span></div>
+        </div>
+        <button onclick="window.location.href='index.html'" class="back-button">Volver a la Página Principal</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
